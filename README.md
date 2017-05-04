@@ -4,7 +4,15 @@ Welcome to our first session!
 
 ## Maven Build
 
-This simple project can be built using Maven that comes bundled with Eclipse Neon
+This simple project can be built using Maven that comes bundled with Eclipse Neon, or via the command line:
+
+'''
+$ mvn clean site package
+
+'''
+
+
+
 
 ## Traditional build
 
