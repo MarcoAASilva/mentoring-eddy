@@ -10,3 +10,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.classpath
+/.project
+/.settings/org.eclipse.jdt.core.prefs
+/.settings/org.eclipse.m2e.core.prefs
+br
+package-list
+stylesheet.css
+allclasses-frame.html
+allclasses-noframe.html
+constant-values.html
+deprecated-list.html
+help-doc.html
+index.html
+index-all.html
+overview-tree.html
+script.js
+/target
