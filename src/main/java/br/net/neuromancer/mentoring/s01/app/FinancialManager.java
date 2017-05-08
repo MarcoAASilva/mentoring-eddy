@@ -11,6 +11,7 @@ import br.net.neuromancer.mentoring.s01.model.User;
 
 /**
  * “The definition of management is literally "control," but the definition of true leadership is love.”  
+ * "Eddy is watching..."
  *  
  * @see         Account
  * @see         Bank
@@ -28,8 +29,6 @@ public class FinancialManager {
 	 * builds a pre-determined object graph for the model
 	 * 
 	 * @see br.net.neuromancer.mentoring.s01.model
-	 * 
-	 * @link https://en.wikipedia.org/wiki/Object_graph
 	 * 
 	 */
 	

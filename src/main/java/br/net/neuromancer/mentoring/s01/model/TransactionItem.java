@@ -57,7 +57,7 @@ public class TransactionItem {
 	}
 
 	public String toString() {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM YYYY");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-YYYY");
 
 		return String.format("TransactionItem (%d, %s, %f)", id,
 				formatter.format(date.toInstant().atZone(ZoneId.systemDefault())), value);

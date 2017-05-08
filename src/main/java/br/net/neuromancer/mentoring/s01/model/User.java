@@ -93,7 +93,7 @@ public class User {
 
 	public String toString(){
 		StringBuilder builder = new StringBuilder();
-		builder.append(String.format("User (%d, %s, %s)\\n", id, name, username));  //not a good idea to output passwords
+		builder.append(String.format("User (%d, %s, %s)\n", id, name, username));  //not a good idea to output passwords
 
 		builder.append("\n\n  USER ACCOUNTS \n");
 		for (Account a : accounts){

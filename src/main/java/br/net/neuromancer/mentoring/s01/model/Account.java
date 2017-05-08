@@ -63,7 +63,7 @@ public class Account {
 	public String toString(){
 		StringBuilder builder = new StringBuilder();
 		builder.append("-----------------------------\n");
-		builder.append(String.format("    Account (%d, %s) - owned by %s \n", id, number, bank.toString()));
+		builder.append(String.format("    Account (%d, %d) - owned by %s \n", id, number, bank.toString()));
 		builder.append(String.format("\n    Transactions count : %d\n\n", transactions.size()));
 		
 		for (Transaction t : transactions){
