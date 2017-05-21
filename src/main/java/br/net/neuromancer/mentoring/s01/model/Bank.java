@@ -48,6 +48,16 @@ public class Bank {
 	public void setAccounts(Set<Account> accounts) {
 		this.accounts = accounts;
 	}
+	
+	public boolean equals(Object o){
+		if (o instanceof Bank){
+			Bank b = (Bank)o;
+			if (b.getId()==this.getId()){
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public String toString() {
 		return String.format("Bank (%d, %s) - associated with %d accounts ", id, name, accounts.size());
