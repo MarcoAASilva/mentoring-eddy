@@ -5,7 +5,10 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -15,9 +18,11 @@ import javax.swing.JTextArea;
 
 public class SwingFinancialManager {
 
-    private JTextArea output;
-    private JScrollPane scrollPane;
+	private JTextArea output;
+	private JScrollPane scrollPane;
 	private static JFrame mainFrame;
+
+	private static JDialog dialog;
 
 	public static void main(String[] args) {
 		// Schedule a job for the event-dispatching thread:
@@ -46,8 +51,17 @@ public class SwingFinancialManager {
 		// Display the window.
 		mainFrame.setSize(450, 260);
 		mainFrame.setVisible(true);
+
+		dialog = new JDialog(mainFrame, "Click a button", true);
+
+		dialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+		dialog.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we) {
+				System.out.println("Thwarted user attempt to close window.");
+			}
+		});
+
 	}
-	
 
 	public JMenuBar createMenuBar() {
 		JMenuBar menuBar;
@@ -67,7 +81,7 @@ public class SwingFinancialManager {
 				if (mainFrame.isDisplayable()) {
 					mainFrame.dispose();
 				}
-				
+
 				System.out.println("leaving the SwingFinancialManager app");
 
 				System.exit(0);
@@ -79,20 +93,20 @@ public class SwingFinancialManager {
 		return menuBar;
 	}
 
-    public Container createContentPane() {
-        //Create the content-pane-to-be.
-        JPanel contentPane = new JPanel(new BorderLayout());
-        contentPane.setOpaque(true);
- 
-        //Create a scrolled text area.
-        output = new JTextArea(5, 30);
-        output.setEditable(false);
-        scrollPane = new JScrollPane(output);
- 
-        //Add the text area to the content pane.
-        contentPane.add(scrollPane, BorderLayout.CENTER);
- 
-        return contentPane;
-    }
+	public Container createContentPane() {
+		// Create the content-pane-to-be.
+		JPanel contentPane = new JPanel(new BorderLayout());
+		contentPane.setOpaque(true);
+
+		// Create a scrolled text area.
+		output = new JTextArea(5, 30);
+		output.setEditable(false);
+		scrollPane = new JScrollPane(output);
+
+		// Add the text area to the content pane.
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+
+		return contentPane;
+	}
 
 }
