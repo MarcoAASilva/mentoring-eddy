@@ -18,6 +18,15 @@ To get the available tags on the remote:
 $ git ls-remote --tags
 ```
 
+To move to a specific tag:
+
+```
+$ git checkout tags/SWING0
+
+...
+
+$ git checkout master
+```
 
 
 ## Session 01
