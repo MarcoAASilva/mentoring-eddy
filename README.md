@@ -6,9 +6,18 @@ After a brief pause, we're ready for the second session.
 
 The repo has been renamed simply as "mentoring-eddy", as it will now contain code from all the sessions
 
-```
+To get the HEAD of the repo:
 
 ```
+$ git clone https://github.com/MarcoAASilva/mentoring-eddy
+```
+
+To get the available tags on the remote:
+
+```
+$ git ls-remote --tags
+```
+
 
 
 ## Session 01
