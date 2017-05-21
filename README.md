@@ -1,4 +1,17 @@
-# Mentoring Session 01
+# Mentoring Eddy
+
+## Session 02
+
+After a brief pause, we're ready for the second session.
+
+The repo has been renamed simply as "mentoring-eddy", as it will now contain code from all the sessions
+
+```
+
+```
+
+
+## Session 01
 
 Welcome to our first session!
 
