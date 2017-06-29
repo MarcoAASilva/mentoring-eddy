@@ -2,6 +2,8 @@ package br.net.neuromancer.mentoring.s01.app;
 
 import java.util.Date;
 
+import javax.swing.JOptionPane;
+
 import br.net.neuromancer.mentoring.s01.model.Account;
 import br.net.neuromancer.mentoring.s01.model.Bank;
 import br.net.neuromancer.mentoring.s01.model.Transaction;
@@ -35,7 +37,9 @@ public class FinancialManager {
 	public void build(){
 		// create Banks
 		
-		Bank bank1 = new Bank(0, "BayernLB");
+		String name = JOptionPane.showInputDialog("Qual nome do banco?");
+		
+		Bank bank1 = new Bank(0, name);
 		Bank bank2 = new Bank(1, "Commerzbank");
 		
 		

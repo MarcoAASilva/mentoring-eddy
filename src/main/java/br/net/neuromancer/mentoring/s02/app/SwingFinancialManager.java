@@ -22,8 +22,8 @@ import br.net.neuromancer.mentoring.s01.model.Bank;
 
 public class SwingFinancialManager {
 	
-	private static Bank bank1 = new Bank(0, "First Bank");
-	private static Bank bank2 = new Bank(1, "Second Bank");
+	private static Bank bank1 = new Bank(5, "First Bank");
+	private static Bank bank2 = new Bank(3, "Second Bank");
 	
 	private static Bank[] banksVector = { bank1, bank2 } ;
 
